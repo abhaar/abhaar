@@ -3,7 +3,7 @@
 
 - 🔭 I’m currently working at [Bastion Platforms](https://www.bastion.com/)
 - 🤝 I've previously worked at
-  - [Gemini](https://www.gemini.com/)
+  - [Gemini](https://www.gemini.com/) ([Github username](https://github.com/abhaar-gemini))
   - [Axoni](https://www.axoni.com/)
   - [Goldman Sachs](https://www.gs.com/)
   - [Trexquant Investments](https://www.trexquant.com/)
