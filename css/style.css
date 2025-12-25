@@ -3,33 +3,6 @@
 /*========================================================================== 
    Color Theme Variables 
 ========================================================================== */
-
-/* :root { */
-/*   /* Default Theme - Your Current Colors */
-/*   --primary-color: #E04343; */
-/*   --secondary-color: #FFE800; */
-/*   --background-color: #f3f5f8; */
-/* } */
-
-/* Alternative Themes - Uncomment to use */
-
-/* Sunset Gradient Theme */
-/* :root { */
-/*   --primary-color: #FF8E9E; */
-/*   --secondary-color: #FFB88C; */
-/*   --background-color: #FFFBF5; */
-/* } */
-
-
-/* Lavender Dreams Theme */
-/* :root { */
-/*   --primary-color: #B4A7D6; */
-/*   --secondary-color: #FFD3B6; */
-/*   --background-color: #F5F3F7; */
-/* } */
-
-
-/* Ocean Breeze Theme */
 :root {
   --primary-color: #7d7d7d;
   --secondary-color: #cfcfcf;

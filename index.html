@@ -18,6 +18,8 @@
     <link href="assets/flexslider/flexslider.css" rel="stylesheet">
 	<!-- Theme Style -->
     <link href="css/style.css" rel="stylesheet">
+	<!-- Sidebar Styles -->
+	<link href="css/sidebar.css" rel="stylesheet">
 	<!-- Animations -->
     <link href="css/animate.css" rel="stylesheet">
 	<!-- Custom Favicon -->
@@ -34,6 +36,35 @@
       <!-- ****************************** Preloader ************************** -->
       <div id="preloader"></div>
 
+
+	  	<!-- ==========================
+        LEFT SIDEBAR NAVIGATION 
+        =========================== -->
+		<button class="navbar-toggle" id="navbar-toggle">
+			<i class="fa fa-bars"></i>
+		</button>
+		<div class="navbar-overlay" id="navbar-overlay"></div>
+		
+		<nav class="left-navbar" id="left-navbar">
+			<div class="logo">
+				<h2>AG</h2>
+			</div>
+			
+			<ul class="nav-links">
+				<li><a href="#home"><i class="fa fa-home"></i> Home</a></li>
+				<li><a href="#about"><i class="fa fa-user"></i> About</a></li>
+				<li><a href="#service"><i class="fa fa-cogs"></i> Services</a></li>
+				<li><a href="#portfolio"><i class="fa fa-briefcase"></i> Portfolio</a></li>
+				<li><a href="#blog"><i class="fa fa-pencil"></i> Blog</a></li>
+				<li><a href="#contact"><i class="fa fa-envelope"></i> Contact</a></li>
+			</ul>
+			
+			<div class="social-links">
+				<a href="#"><i class="fa fa-twitter"></i></a>
+				<a href="#"><i class="fa fa-linkedin"></i></a>
+				<a href="#"><i class="fa fa-github"></i></a>
+			</div>
+		</nav>
 
 	  	<!-- ==========================
         HEADER SECTION 
@@ -616,6 +647,35 @@
 	<!-- Theme JavaScript Core -->
 	<script src="js/main.js"></script>
 	<script src="js/script.js"></script>
+	
+	<!-- Sidebar Toggle Script -->
+	<script>
+		// Sidebar toggle for mobile
+		const navbarToggle = document.getElementById('navbar-toggle');
+		const leftNavbar = document.getElementById('left-navbar');
+		const navbarOverlay = document.getElementById('navbar-overlay');
+		
+		navbarToggle.addEventListener('click', function() {
+			leftNavbar.classList.toggle('active');
+			navbarOverlay.classList.toggle('active');
+		});
+		
+		navbarOverlay.addEventListener('click', function() {
+			leftNavbar.classList.remove('active');
+			navbarOverlay.classList.remove('active');
+		});
+		
+		// Close sidebar when clicking a link on mobile
+		const navLinks = document.querySelectorAll('.left-navbar .nav-links a');
+		navLinks.forEach(link => {
+			link.addEventListener('click', function() {
+				if (window.innerWidth <= 991) {
+					leftNavbar.classList.remove('active');
+					navbarOverlay.classList.remove('active');
+				}
+			});
+		});
+	</script>
 
 	<!-- GOOGLE MAPS DATA -->
     <script type="text/javascript">
